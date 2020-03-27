@@ -8,7 +8,7 @@ it's protected i2c transmission by PlatformSCP03 keys.
 Platformio(PIO Core:4.3.0 PLATFORM: Espressif 32 1.11.1) with VS Code environment.  
 install "Espressif 32" platform definition on Platformio  
 
-you need to do provisioning by executing NXP SE050 provisioning-cli prior to use this code.   
+you need to do provisioning by executing [NXP SE050 provisioning-cli](https://github.com/kmwebnet/NXP-SE050-provisioning-cli) prior to use this code.   
 
 # Environment reference
   
@@ -31,15 +31,16 @@ you need to do provisioning by executing NXP SE050 provisioning-cli prior to use
 
 # Usage
 
-"git clone --recursive " on your target directory. and download "Plug & Trust MW Release v02.12.04" from NXP website and put the contents into src as "simw-top" folder. you need to change a serial port number which actually connected to ESP32 in platformio.ini.
+"git clone --recursive " on your target directory. and download "Plug & Trust MW Release v02.12.04" from NXP website and put the contents into src as "simw-top" folder.  
+you need to change a serial port number which actually connected to ESP32 in platformio.ini.
 
-replace definitions to your own in main.c
+replace definitions to your own in main.c  
 
-#define EXAMPLE_WIFI_SSID ""
-#define EXAMPLE_WIFI_PASS "" 
+#define EXAMPLE_WIFI_SSID ""    
+#define EXAMPLE_WIFI_PASS ""   
 
-#define DFL_SERVER_NAME ""
-#define DFL_SERVER_PORT ""
+#define DFL_SERVER_NAME ""  
+#define DFL_SERVER_PORT ""  
 
 # Run this project
 
